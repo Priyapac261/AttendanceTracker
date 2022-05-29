@@ -1,7 +1,9 @@
 # AttendanceTracker
 Hi there!
-I have made this project for the mentorship program Microsoft Engage 2022,
-In this, i have made a smart attendance system in which you can add as many students as you want, you can update or delete existing students' details
+I have made this project for the mentorship program Microsoft Engage 2022.
+
+In this, i have made a smart attendance system in which you can add as many students as you want, you can update or delete existing students' details.
+
 It will capture your photos and after training the data, it is able to recognize your face and save your attendance
 
 Before cloning this repo, make sure your system has the following requirements:
