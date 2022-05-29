@@ -163,7 +163,7 @@ class Student:
         scroll_x = ttk.Scrollbar(table_frame,orient=HORIZONTAL)
         scroll_y = ttk.Scrollbar(table_frame,orient=VERTICAL)
 
-        self.student_table = ttk.Treeview(table_frame,columns=('Dep','yr','Reg_no.', 'name','email'),xscrollcommand=scroll_x.set,yscrollcommand=scroll_y.set)
+        self.student_table = ttk.Treeview(table_frame,columns=('Dep','yr','Regno.', 'name','gender','phone','email'),xscrollcommand=scroll_x.set,yscrollcommand=scroll_y.set)
         scroll_x.pack(side=BOTTOM,fill=X)
         scroll_y.pack(side=RIGHT,fill=Y)
         scroll_x.config(command=self.student_table.xview)
@@ -171,8 +171,10 @@ class Student:
 
         self.student_table.heading("Dep",text="Department")
         self.student_table.heading("yr",text="Year")
-        self.student_table.heading("Reg_no.",text="Registration_number")
+        self.student_table.heading("Regno.",text="Registration_number")
         self.student_table.heading("name",text="Name")
+        self.student_table.heading("gender",text="Gender")
+        self.student_table.heading("phone",text="Phone")
         self.student_table.heading("email",text="Email")
         
         self.student_table["show"] = "headings"
